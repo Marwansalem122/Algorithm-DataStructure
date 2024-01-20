@@ -1,0 +1,7 @@
+# ninja log v5
+3	679	7274575227215514	CMakeFiles/c___code.dir/main.cpp.obj	3c545f0056a5dc2a
+679	846	7274575228854428	c___code.exe	c0b336f3bf3a048c
+0	201	7274583115753198	build.ninja	779a39475ca487f9
+5	702	7274583122944133	CMakeFiles/c___code.dir/SortingAlgorithm.cpp.obj	bd63d8fb21b0d183
+2	530	7274583352363881	CMakeFiles/c___code.dir/main.cpp.obj	3c545f0056a5dc2a
+530	639	7274583353421813	c___code.exe	fe76930ae4d6cc28
