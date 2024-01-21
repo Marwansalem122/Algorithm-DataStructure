@@ -46,3 +46,53 @@ void SortingAlgorithm::InsertionSort(int *arr, int size) {
         arr[j+1]=key;
     }
 }
+
+void SortingAlgorithm::merge(int *arr, const int left, const int mid, const int right) {
+    int const subArrayOne=mid-left+1,subArrayTwo=right-mid;
+    auto* leftArray=new int[subArrayOne],* rightArray=new int[subArrayTwo];
+    for (int i = 0; i < subArrayOne; ++i) {
+        leftArray[i]=arr[left+i];
+    }
+    for (int i = 0; i < subArrayTwo; ++i) {
+        rightArray[i]=arr[mid+1+i];
+    }
+    auto indexOfSubArrayOne=0,indexOfSubArrayTwo=0;
+    int indexOfMergedArray=left;
+    while(subArrayOne>indexOfSubArrayOne &&subArrayTwo>indexOfSubArrayTwo){
+        if(rightArray[indexOfSubArrayTwo]>=leftArray[indexOfSubArrayOne]){
+            arr[indexOfMergedArray]=leftArray[indexOfSubArrayOne];
+            indexOfSubArrayOne++;
+        }else{
+            arr[indexOfMergedArray]=rightArray[indexOfSubArrayTwo];
+            indexOfSubArrayTwo++;
+        }
+        indexOfMergedArray++;
+    }
+
+    while(subArrayOne>indexOfSubArrayOne){
+        arr[indexOfMergedArray]=leftArray[indexOfSubArrayOne];
+        indexOfSubArrayOne++;
+        indexOfMergedArray++;
+    }
+    while(subArrayTwo>indexOfSubArrayTwo){
+        arr[indexOfMergedArray]=rightArray[indexOfSubArrayTwo];
+        indexOfSubArrayTwo++;
+        indexOfMergedArray++;
+    }
+    delete[] leftArray;
+    delete[] rightArray;
+}
+
+void SortingAlgorithm::mergeSort(int *arr, const int begin, const int end) { //O(N*log(N))
+    if(begin>=end)
+        return;
+    int mid =begin+(end-begin)/2;
+    mergeSort(arr,begin,mid);
+    mergeSort(arr,mid+1,end);
+    merge(arr,begin,mid,end);
+
+}
+
+
+
+

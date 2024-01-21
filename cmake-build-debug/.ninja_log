@@ -1,7 +1,13 @@
 # ninja log v5
-3	679	7274575227215514	CMakeFiles/c___code.dir/main.cpp.obj	3c545f0056a5dc2a
-679	846	7274575228854428	c___code.exe	c0b336f3bf3a048c
-0	201	7274583115753198	build.ninja	779a39475ca487f9
-5	702	7274583122944133	CMakeFiles/c___code.dir/SortingAlgorithm.cpp.obj	bd63d8fb21b0d183
 2	530	7274583352363881	CMakeFiles/c___code.dir/main.cpp.obj	3c545f0056a5dc2a
 530	639	7274583353421813	c___code.exe	fe76930ae4d6cc28
+0	201	7275458322395598	build.ninja	779a39475ca487f9
+5	702	7274583122944133	CMakeFiles/c___code.dir/SortingAlgorithm.cpp.obj	bd63d8fb21b0d183
+45	970	7275471196896937	CMakeFiles/c___code.dir/SortingAlgorithm.cpp.obj	bd63d8fb21b0d183
+56	971	7275471196896937	CMakeFiles/c___code.dir/main.cpp.obj	3c545f0056a5dc2a
+971	1232	7275471199490035	c___code.exe	fe76930ae4d6cc28
+4	691	7275472019361225	CMakeFiles/c___code.dir/main.cpp.obj	3c545f0056a5dc2a
+692	801	7275472020438351	c___code.exe	fe76930ae4d6cc28
+24	760	7275479899959304	CMakeFiles/c___code.dir/main.cpp.obj	3c545f0056a5dc2a
+18	766	7275479900008982	CMakeFiles/c___code.dir/SortingAlgorithm.cpp.obj	bd63d8fb21b0d183
+767	919	7275479901505948	c___code.exe	fe76930ae4d6cc28

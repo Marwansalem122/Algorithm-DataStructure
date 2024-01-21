@@ -11,6 +11,8 @@ public:
     static void BubbleSort(int arr[],int size);
     static void SelectionSort(int arr[],int size);
     static void InsertionSort(int arr[],int size);
+    static void merge(int arr[],int const left,int const mid,int const right);
+    static void mergeSort(int arr[],int const begin,int const end);
 
 
 };
