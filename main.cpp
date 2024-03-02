@@ -1,10 +1,10 @@
 #include <iostream>
 
 #include "SortingAlgorithm.h"
-
+#include<string>
 
 //
-
+//50155555
 using namespace std;
 void printArray(int arr[], int size);
 void printArray2(int *pInt, int n);
